@@ -98,9 +98,9 @@
   #intro.out{opacity:0;visibility:hidden}
   #intro .disc{position:relative;width:168px;height:168px;border-radius:50%;background:var(--white);display:grid;place-items:center;
     box-shadow:0 0 0 5px rgba(200,162,74,.35),0 18px 40px rgba(0,0,0,.35);animation:pop .4s var(--ease) both}
-  #intro .disc::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);animation:ring .7s ease-out .75s both}
+  #intro .disc::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);animation:ring .8s ease-out 1s both}
   #intro .hs{width:112px;height:auto;color:var(--navy);overflow:visible;animation:pop .4s var(--ease) .12s both}
-    #intro .hs .shake{transform-origin:320px 256px;animation:shake .6s ease-in-out .45s both}
+    #intro .hs .shake{transform-origin:320px 256px;animation:shake .8s ease-in-out .5s both}
   #intro .hi{font-family:var(--serif);font-size:26px;animation:rise .4s ease-out .25s both}
   #intro .sub2{font-size:14px;color:#dfe5f1;animation:rise .4s ease-out .35s both}
   #intro .skip{position:absolute;bottom:max(24px,env(safe-area-inset-bottom));font-size:12.5px;color:#b9c3d8;animation:rise .4s ease-out .5s both}
@@ -120,7 +120,7 @@
     <h1>Ben Shadabi</h1>
     <div class="role">Honours BBA, Business Analytics<br>George Brown College, Toronto</div>
     <span class="badge">Seeking a Summer 2027 co-op</span>
-    <div class="focus">Finance · Deal advisory · Consulting</div>
+    <div class="focus">Finance · Banking · Consulting</div>
   </header>
 
   <main>
@@ -215,7 +215,7 @@
     var done=false;
     function end(){if(done)return;done=true;ov.classList.add('out');document.body.classList.remove('pre');startReveal();setTimeout(function(){ov.remove()},450)}
     ov.addEventListener('click',end);
-    setTimeout(end,1500);
+    setTimeout(end,2000);
   }
 
   var email='ben.shadabi@gmail.com',btn=document.getElementById('copyMail'),hint=document.getElementById('hint'),toast=document.getElementById('toast'),timer;
